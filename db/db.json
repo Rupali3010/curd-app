@@ -1,0 +1,24 @@
+{
+  "post": [
+    {
+      "title": "react",
+      "author": "shashikunal",
+      "id": 2
+    },
+    {
+      "title": "html",
+      "author": "priyanka",
+      "id": 3
+    },
+    {
+      "title": "css",
+      "author": "Divya",
+      "id": 4
+    },
+    {
+      "title": "javascript",
+      "author": "Dixith",
+      "id": 5
+    }
+  ]
+}
