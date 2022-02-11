@@ -24,6 +24,7 @@ const DeletePosts = () => {
     Axios.delete(`/post/${id}`);
     navigate("/");
   };
+
   return (
     <div className="removeBlock">
       <aside>

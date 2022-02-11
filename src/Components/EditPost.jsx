@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Axios from "../Axios";
+
 const EditPost = () => {
   let navigate = useNavigate();
   let { id } = useParams();
@@ -9,7 +10,9 @@ const EditPost = () => {
     title: "",
     author: "",
   });
+
   let { loading, title, author } = state;
+
   let handleChange = e => {
     let { name, value } = e.target;
     setState({ ...state, [name]: value });
@@ -34,6 +37,7 @@ const EditPost = () => {
     };
     fetchPosts();
   }, [id]);
+
   return (
     <section id="postsBlock" className="col-md-4 mx-auto bg-white p-2 mt-5">
       <article>

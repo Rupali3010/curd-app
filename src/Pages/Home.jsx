@@ -6,6 +6,7 @@ const Home = () => {
   let [state, setState] = useState([]);
   let [loading, setLoading] = useState(false);
   let [searchTerm, setSearchTerm] = useState("");
+
   useEffect(() => {
     let fetchData = async () => {
       let payload = await Axios.get("/post");
